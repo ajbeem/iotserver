@@ -3,10 +3,10 @@
 class ConexionPDO {
     
     //Server Remoto
-    const usuario='vybcommx_reader';
-    const psw='vb2019*ms1';
-    const host='65.99.252.170';
-    const bd='vybcommx_reporte_android';
+    const usuario='u538442363_uqadu';
+    const psw='tNib37Gj9j7o';
+    const host='sql173.main-hosting.eu.';
+    const bd='u538442363_yzyju';
 
     //Server Local
     /*

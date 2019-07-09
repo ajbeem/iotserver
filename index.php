@@ -25,7 +25,7 @@ $hrEntrada = date("H:i:s");
             <p>Iniciar sesi&oacute;n</p>
             <h3><?= $mensaje ?></h3>
         </div>
-        <form action="./php/login.php" method="post">
+        <form action="./php/loginManagers.php" method="post">
             <div class="form-group">
                 <label for="cmpHrEntrada" class="control-label">Hora de entrada: <?= $hrEntrada ?> </label>
                 <input type="text" name="cmpHrEntrada" id="cmpHrEntrada" readonly value="<?= $hrEntrada ?>" hidden>
@@ -39,8 +39,6 @@ $hrEntrada = date("H:i:s");
                 <input type="password" name="cmpPassword" class="form-control" placeholder="Contrase&ntilde;a">
             </div>
             <div class="form-group">
-
-
                 <button type="submit" class="btn btn-primary pull-right">Entrar</button>
             </div>
         </form>
