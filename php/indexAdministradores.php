@@ -37,7 +37,7 @@ $horaActual = date("H:i:s");
     <header>
         <div class="w3-bar w3-border w3-card-4 w3-deep-purple">
         <a href="https://www.pcentaury.com" class="w3-bar-item w3-button">Proxima Centaury</a>
-        <a href="./form_registro_managers.php" class="w3-bar-item w3-button">Alta de Administradores</a>
+        <a href="./form_registro_administradores.php" class="w3-bar-item w3-button">Alta de Administradores</a>
         <a href="./form_registro_usuarios.php" class="w3-bar-item w3-button">Alta de Usuarios</a>
         <a href="#" class="w3-bar-item w3-button">Modificaci&oacute;n de Datos de Promotores</a>
         </div> 
@@ -48,7 +48,7 @@ $horaActual = date("H:i:s");
             <p>Iniciar sesi&oacute;n</p>
             <h3><?=$mensaje?></h3>
         </div>
-        <form action="./php/loginAdministradores.php" method="post">
+        <!--form action="./php/loginAdministradores.php" method="post">
             <div class="form-group">
                 <label for="cmpHrEntrada" class="control-label">Hora de entrada: <?=$hrEntrada?>  </label>
                 <input type="text" name="cmpHrEntrada" id="cmpHrEntrada" readonly value="<?=$hrEntrada?>" hidden>
@@ -64,7 +64,7 @@ $horaActual = date("H:i:s");
             <div class="form-group">
                 <button type="submit" class="btn btn-primary pull-right">Entrar</button>
             </div>
-        </form>
+        </form-->
     </div>
 </div>
     

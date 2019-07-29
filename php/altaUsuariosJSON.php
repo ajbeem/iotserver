@@ -3,15 +3,19 @@ require_once './conexionPDO_Usuarios.php';
 /*CONECTAR A LA BASE DE DATOS 
 cmpUsuarioAdministrador, cmpNusuario, cmpPassword, cmpCorreoElectronico
 usuarioAdministrador, nUsuario, password, correoElectronicoUsuario*/
-//Datos por JS AJAX
-if (array_key_exists('nUsuario', $_REQUEST)) {
-    $id = 0;
-    $administrador = $_REQUEST['usuarioAdministrador'];
-    $username = $_REQUEST['nUsuario'];
-    $password = $_REQUEST['password'];
-    $cryptPassword = password_hash($password, PASSWORD_DEFAULT);
-    $eMail = $_REQUEST['correoElectronicoUsuario'];
+//Datos JSON AJAX
+$json = file_get_contents('php://input');
+$fechaActual = date("d-m-Y");
 
+if ($json != null) {
+    $id = 0;
+    $objjson = json_decode($json);
+    $administrador = $objjson->usuarioAdministrador;
+    $user = $objjson->nUsuario;
+    $pass = $objjson->password;
+    $eMail = $objjson->correoElectronicoUsuario;    
+    $serverResponse = array();
+    $cryptPassword = password_hash($pass, PASSWORD_DEFAULT);
     $obj1 = new ConexionPDO();
     try {
         $cnx = $obj1->conectar();
@@ -21,7 +25,7 @@ if (array_key_exists('nUsuario', $_REQUEST)) {
         $sql0-> execute();
         $result = $sql0->fetch(PDO::FETCH_ASSOC);
         if ($result > 0) {
-            echo "El usuario ya esta registrado, solicite Modificacion de Datos";
+            $serverResponse['answer'] = "El usuario ya esta registrado, solicite Modificacion de Datos";
         } else {
             //echo "Datos recibidos";       
             $sql= $cnx->prepare("INSERT INTO u538442363_yzyju.Clientes 
@@ -34,18 +38,25 @@ if (array_key_exists('nUsuario', $_REQUEST)) {
             $sql->bindParam(':cmpMail', $eMail);
             $sql->bindParam(':cmpAdministrador', $administrador);
             if ($sql->execute()) {
-                echo "registroCorrecto";
+                $serverResponse['answer'] = "registroCorrecto";
+                $serverResponse['message'] = "Proceso Terminado";
+                $sql->closeCursor();
             } else {
-                exit("no se pudieron agregar los datos error de conexión a BDD");
+                $serverResponse['answer'] = 'NO_registrado';
+                $serverResponse['message'] = "NO se pudieron agregar los datos error de conexión a BDD";
+                $sql->closeCursor();
             }
         }
     } catch (Exception $e) {
-        echo 'Excepci&oacute;n capturada al Almacenar los datos nuevos: ',  $e->getMessage(), "\n";
+        $serverResponse['answer'] = 'NO_registrado';
+        $serverResponse['message'] = 'Excepcion capturada al Almacenar los datos nuevos: '.$e->getMessage();
     } finally{
-        //$sql->closeCursor();
         $sql0->closeCursor();
         $cnx= null;
+        echo json_encode($serverResponse);
     }
 } else {
-    echo "NO SE RECIBIERON LOS DATOS CORRECTAMENTE";
+    $serverResponse['answer'] = 'NO_registrado';
+    $serverResponse['message'] = "NO SE RECIBIERON LOS DATOS CORRECTAMENTE";
+    echo json_encode($result);
 }

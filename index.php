@@ -42,7 +42,7 @@ $hrEntrada = date("H:i:s");
                 <button type="submit" class="btn btn-primary pull-right">Entrar</button>
             </div>
         </form>
-        <div class="table-responsive">
+        <!--div class="table-responsive">
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -72,7 +72,7 @@ $hrEntrada = date("H:i:s");
                     <tr></tr>
                 </tbody>
             </table>
-        </div>
+        </div-->
     </div>
 </body>
 

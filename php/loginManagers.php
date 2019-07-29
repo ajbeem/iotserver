@@ -20,7 +20,7 @@ if(isset ($_POST['cmpNusuario'])){
         if (password_verify($password, $result['pswd'])) {
             $sql->closeCursor();
             $cnx = null; 
-            $_SESSION["IDusuario"] = $username;
+            $_SESSION["IDusuarioAdministrador"] = $username;
             $sql->closeCursor();
             $cnx = null;
             header("location:./indexAdministradores.php?id=$id&hr_entrada=$hr_entrada");

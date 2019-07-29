@@ -1,9 +1,9 @@
 <?php
 session_start();
-if (isset($_SESSION['IDusuario'])) {
-    $idUsuarioAdministrador = $_SESSION['IDusuario'];
+if (isset($_SESSION['IDusuarioAdministrador'])) {
+    $idUsuarioAdministrador = $_SESSION['IDusuarioAdministrador'];
 } else {
-    header("location:../returned.index.php?mensaje=sesionEnded");
+    header("location:../index.php?mensaje=sesionEnded");
 }
 ?>
 <!DOCTYPE html>
@@ -31,7 +31,7 @@ if (isset($_SESSION['IDusuario'])) {
         <!--FORM por submit
         <form name="formularioRegistroPromotores" method="post" action="./altaClientes.php" enctype="multipart/form-data"-->
         <!--FORM por JS-->
-        <form name="formularioRegistroClientes" method="post" action="#" enctype="multipart/form-data" -->
+        <form name="formularioRegistroClientes" method="post" action="#" enctype="multipart/form-data">
             <h2>Modulo de Alta de Clientes(as)</h2>
             <div class="form-group">
                 <label for="cmpUsuarioAdministrador">Usuario Administrador:</label>
@@ -39,7 +39,7 @@ if (isset($_SESSION['IDusuario'])) {
             </div>
             <div class="form-group">
                 <label for="cmpNusuario">Nombre de usuario:</label>
-                <input type="text" name="cmpNusuario" id="cmpNusuario" class="form-control" placeholder="Nick Name" required>
+                <input type="text" name="cmpNusuario" id="cmpNusuario" class="form-control" placeholder="Nick Name" required>            
             </div>
             <div class="form-group">
                 <label for="pwd">Contrase&ntilde;a</label>
@@ -51,7 +51,7 @@ if (isset($_SESSION['IDusuario'])) {
                 <input type="email" name="cmpCorreoElectronico" id="cmpCorreoElectronico" class="form-control" placeholder="E-Mail" required>
             </div>
             <div class="form-group">
-                <input type="button" class="btn btn-success" id="salvarRegistroCliente" name="salvarRegistroCliente" value="Enviar mis Datos" class="form-control">
+                <input type="button" class="btn btn-success" id="salvarRegistroUsuarioJSON" name="salvarRegistroUsuarioJSON" value="Enviar mis Datos" class="form-control">
             </div>
         </form>
     </div>
