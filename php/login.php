@@ -12,7 +12,7 @@ require_once './conexionPDO_Usuarios.php';
     $obj1 = new ConexionPDO();
     try {
         $cnx = $obj1->conectar();
-        $sql = $cnx->prepare("SELECT password FROM clientes WHERE userName = :nombreUsr;");
+        $sql = $cnx->prepare("SELECT pswd FROM clientes WHERE userName = :nombreUsr;");
         $sql->bindValue( ':nombreUsr', $username);
         $resultset = $sql -> execute();
         $result = $sql->fetch(PDO::FETCH_ASSOC);
