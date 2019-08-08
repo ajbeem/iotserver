@@ -5,7 +5,7 @@ $fechaActual = date("d-m-Y");
 if ($json != null) {
     $objjsonUser = json_decode($json);
     $user = $objjsonUser->nUsuario;
-    $pass = $objjsonUser->password;
+    $pass = $objjsonUser->pswd;
     //nUsuario, password
     $serverResponse = array();
     $obj = new ConexionPDO();
@@ -24,7 +24,7 @@ if ($json != null) {
                     if (password_verify($pass, $resultset['pswd'])) {
                         ini_set("session.cookie_lifetime","36000"); 
                         session_start();
-                        $serverResponse["answer"] = "usuarioAutenticado";
+                        $serverResponse["answer"] = "ok";
                         $serverResponse['user'] =  $user;
                     } else {
                         $serverResponse["answer"] = "PASSWORD INCORRECTO INTENTELO NUEVAMENTE";
