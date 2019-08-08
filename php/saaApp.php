@@ -31,7 +31,7 @@
             </header>
             <div class="w3-container">
                 <p>
-                    <a href="http://www.diot.esy.es/files/app-debug.apk" download="SaaApplication">
+                    <a href="../files/saa_V1.0.apk" download="SaaApplication">
                         <button id="btnDownload" class="btn btn-primary"><i class='fab fa-android' style='font-size:24px;'></i> Download</button>
                     </a>
                 </p>
