@@ -19,7 +19,7 @@ if (isset($_POST['nUsuario'])) {
                 if (password_verify($pass, $resultset['pswd'])) {
                     //ini_set("session.cookie_lifetime","36000"); 
                     //session_start();
-                    $serverResponse["answer"] = "usuarioAutenticado";
+                    $serverResponse["answer"] = "ok";
                     $serverResponse['user'] =  $user;
                 } else {
                     $serverResponse["answer"] = "PASSWORD INCORRECTO INTENTELO NUEVAMENTE";
