@@ -1,8 +1,8 @@
 <?php
 require_once './conexionPDO_Usuarios.php';
 if (isset($_POST['nUsuario'])) {
-    $user = $_POST['nUsuario'];
-    $pass = $_POST['password'];
+    $user = htmlentities(addslashes($_POST['nUsuario']));
+    $pass = htmlentities(addslashes($_POST['pswd']));
     $serverResponse = array();
     $obj = new ConexionPDO();
     try {
