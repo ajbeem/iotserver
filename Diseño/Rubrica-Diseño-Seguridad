@@ -1,0 +1,127 @@
+===== Seguridad ===========
+
+Foro: ¿Qué otras vulnerabilidades conoces en entornos Web que no se mencionen en el top 10?
+
+Actividad: Investigación de otras metodologías de desarrollo de aplicaciones Web seguras
+Fecha límite 5 de jul hasta 23:55  Puntos 1.3 Presentando un cuadro de entrada de texto o una carga de archivo Disponible 28 de abr en 10:00-8 de sep en 23:59 4 meses
+El trabajo deberá contener una pequeña descripción sobre otras metodologías de Desarrollo Web Seguro además de las ya vistas en el temario o elegir solo una y profundizar más en ella.
+
+Además, deberás elaborar un manual de prácticas básicas de las seguridad de la red informática mundial.
+
+ 
+
+Extensión máxima: 5 páginas.
+
+
+Actividad: Práctica guiada con WebGoat
+Fecha límite 26 de jul hasta 23:55  Puntos 3.4 Presentando un cuadro de entrada de texto o una carga de archivo Disponible 28 de abr en 10:00-8 de sep en 23:59 4 meses
+En esta actividad deberás realizar la práctica guiada con WebGoatPreview the document.
+
+La práctica consistirá en un ataque a una aplicación web desplegada mediante la herramienta WebGoat, diseñada a tal efecto. 
+
+Para ello, deberá elegir una de las lecciones propuestas por WebGoat y llevarla a la práctica.
+
+El entregable será un documento explicativo con la extensión que considere necesaria (sin límite) donde indique qué realizó para conseguir que el ataque fuera fructífero, escribiendo todos los pasos que haya llevado a cabo y todos los detalles de cómo lo llevó a cabo. Y por último qué efecto produjo sobre la aplicación.
+
+
+
+
+
+Actividad: Análisis de vulnerabilidades con herramientas Proxy HTTP
+Fecha límite 16 de ago hasta 23:55  Puntos 4 Presentando un cuadro de entrada de texto o una carga de archivo Disponible 28 de abr en 10:00-8 de sep en 23:59 4 meses
+La práctica consiste en instalar una herramienta Proxy HTTP siguiendo la documentación adjunta.
+
+Descarga el documento para realizar la actividadPreview the document
+
+Una vez instalada, deberá elegir una de las lecciones de WebGoat de entre las que es necesario utilizar una herramienta tipo Proxy como WebScarab para conseguir llevar a cabo el ataque.
+
+Algunos de los ataques de WebGoat que requieren el uso de WebScarab u otra herramienta similar son:
+
+Basic Authentication
+Multi Level Login 1
+Multi Level Login 2
+Command Injection
+Numeric SQL Injection
+Exploit Hidden Fields
+Exploit Unchecked emails
+No es obligatorio que elija una de estos. Puede elegir el que más le convenga.
+
+Deberá entregar un documento en PDF de la extensión que considere necesaria donde explique cómo utilizo la herramienta de Proxy HTTP para hacer fructífero el ataque. Se valorará que se ajuntes capturas de pantalla (screenshots), que complementen la explicación y que lo hagan más visual.
+
+
+==== Diseño =====
+
+Actividad: ¿Qué es la Web 2.0?
+Fecha límite 17 de jun hasta 23:55  Puntos 2.6 Presentando un cuadro de entrada de texto o una carga de archivo Disponible 28 de abr en 10:00-8 de sep en 23:59 4 meses
+Lee el artículo «Qué es Web 2.0. Patrones del diseño y modelos del negocio para la siguiente generación del software» escrito por Tim O'Reilly.
+
+Deberás realizar un informe sobre el artículo y aportar tu valoración personal sobre el mismo.
+
+Además, partiendo de lo que se indica en el texto, analiza los elementos de la red informática mundial 2.0 y explica su funcionamiento.
+
+También deberás realizar un cuadro comparativo de estos elementos.
+
+ 
+
+Extensión máxima: 5 páginas (Georgia, interlineado 1,5).
+
+Foro: Aplicaciones de la Web 2.0
+
+Actividad: Informe de las herramientas utlizadas
+Fecha límite 5 de ago hasta 23:55  Puntos 2.6 Presentando un cuadro de entrada de texto o una carga de archivo Disponible 28 de abr en 10:00-8 de sep en 23:59 4 meses
+Esta actividad consiste en la realización y entrega de un informe detallado de todos los pasos dados por el estudiante en la utilización, creación y edición de herramientas de la red informática mundial 2.0 que se detallan en el siguiente apartado.
+
+Además debe incluirse en el informe, la dirección web del sitio creado desde donde se ubiquen todos los enlaces
+a las herramientas utilizadas para su revisión y calificación.
+
+El trabajo debe tener un apartado para cada herramienta/utilidad en el que se deben especificar las siguientes
+secciones (se utiliza para los ejemplos el Blog, pero debe asimilarse para cada una de las herramientas):
+
+1. Introducción
+
+Selección de la herramienta: si existen alternativas para una herramienta explicar por qué se ha seleccionado una frente a otra. Por ejemplo, en el caso del Blog por qué se ha decidido utilizar Blogger frente a WordPress o viceversa.
+
+Pasos realizados incluidas capturas de pantalla para la puesta en marcha, documentando de forma
+detallada las decisiones adoptadas por el estudiante en cada caso.
+
+Cada elemento o herramienta que se configura debe tener algún contenido relevante. Por ejemplo en el
+caso del Blog una entrada sobre una temática elegida.
+
+Dentro de cada herramienta se deben argumentar las decisiones adoptadas en cuanto a las características
+seleccionadas.
+
+Todas las herramientas utilizadas deberían estar enlazadas unas con otras, de forma por ejemplo que se
+pueda acceder a Twitter desde el Blog. Los pasos dados para realizar los enlaces deben ser documentados.
+ 
+
+2. Herramientas obligatorias
+
+A continuación se enumeran las herramientas a utilizar y documentar en el trabajo. En el informe debe estar claramente especificada la dirección web de alojamiento de sitio Web que contiene los enlaces.
+
+Sitio Web con enlaces: se debe realizar un sitio web, preferiblemente en Google Sites, con la temática elegida y los enlaces a todas las herramientas utilizadas. Este sitio
+debe ser público y en el informe debe aparecer claramente la dirección web del mismo.
+
+Blog: se debe crear un blog que obligatoriamente debe contar con al menos una entrada, etiquetas, sindicación RSS y habilitado la posibilidad de comentarios. Este blog será la bitácora del estudiante en el proceso de la asignatura desde el que pueda describir su progreso, comentarios a lecturas realizadas, etc.
+Redes Sociales: crear un perfil en una red social o un grupo dentro de una red social, sobre la temática elegida.
+Servicio de alojamiento remoto: habilitar un sistema de alojamiento remoto en la nube, con objeto de poder compartir documentos.
+Las herramientas deben estar lo más interconectadas posible unas con otras, de forma que no sea necesario replicar manualmente los contenidos por ejemplo entre el Blog y la red social.
+
+ 
+
+3. Herramientas optativas 
+
+A continuación se enumeran algunas herramientas que se pueden utilizar y documentar en el trabajo. De forma opcional, y siempre que se encuentre documentada según las instrucciones de la introducción, el estudiante puede utilizar otras herramientas que considere interesantes.
+
+Ofimática 2.0: crear al menos un documento público en el sistema de GoogleDocs.
+
+MicroBlog: crear una cuenta en Twitter para realizar microblogging sobre la temática elegida.
+
+WIKI: se debe crear una wiki sobre la temática elegida. Esta wiki servirá para que se puedan elaborar contenidos de forma colaborativa con otros estudiantes.
+
+Repositorios de contenido multimedia: documentar la utilización de un repositorio para almacenar imágenes y de forma opcional vídeos de interés para la temática elegida.
+ 
+ Actividad: Más allá de la Web 2.0
+Fecha límite 12 de ago hasta 23:55  Puntos 3.4 Presentando un cuadro de entrada de texto o una carga de archivo Disponible 28 de abr en 10:00-8 de sep en 23:59 4 meses
+En esta actividad deberás que investigar sobre las últimas novedades de la red informática mundial 2.0 y proponer alguna innovación usando la red informática mundial 3.0.
+
+Extensión máxima: 3 páginas (Georgia 11, interlineado 1,5).
